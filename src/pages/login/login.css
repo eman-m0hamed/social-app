@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: none;
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --colo-primart:#20251B;
+    --text-color:black;
+    --color-bg: rgb(236, 236, 236);
+    --color-card:white;
+    --color-soft: #aaaaaa;
+   --color-border: lightgray;
+    --color-red:#1C0E01;
+
+}
+.tme{
+    width: 30%;
+       margin-left: 30px;
+}
+.container{
+    max-width: 991px;
+    width: 100%;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5{
+    font-weight: 600;
+    color: var(--text-color);
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user img{
+    width: 33px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.user h4{
+    color: var(--colo-primart);
+}
+body{
+    background: var(--color-bg);
+    color: var(--color-soft);
+}
+small,p{
+    color: var(--color-soft);
+}
+.btn{
+    padding: .6rem 1.6rem;
+    display: inline-block;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-size: .9rem;
+    font-weight: 500;
+    border: none;
+    transition: .3s ease;
+}
+.btn:hover{
+    opacity: .7;
+}
+.btn-primary{
+    background: #566546;
+}
+.btn-red{
+    background: var(--color-red);
+    color: white;
+}
+
+.login{
+    background: #030303;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/img/mno.jpg);
+
+
+}
+.login .card{
+    display: flex;
+    width: 580px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+.login .card .left p{
+    font-size: .9rem;
+}
+.login .card .left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+
+}
+.login h2{
+    color: var(--colo-primart);
+}
+.login .card span{
+    color: var(--colo-primart);
+}
+.login .card .right{
+    flex: 1;
+    background: var(--colo-primart);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ flex-direction: column;
+ gap: 10px;
+}
+.login form input {
+    padding: 1rem 0;
+    width: 90%;
+    background: transparent;
+    border: transparent;
+    outline: none;
+    border-bottom: 1px solid #282E22;
+    margin:0 auto;
+    color: white;
+   
+}
+.login form input::placeholder{
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.login .btn{
+    color: var(--colo-primart);
+    margin-top:1rem;
+}
+
+
+
+
+
+
+
+@media (max-width:600px){
+    .login .card{
+        width: 90%;
+        flex-direction: column;
+    }
+    .login .card .right{
+        padding: 20px 0;
+    }
+}

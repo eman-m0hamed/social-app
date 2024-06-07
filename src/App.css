@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+main{
+    display: grid;
+    grid-template-columns: 20% 54% 23%;
+    gap: 4%;
+    width: 100%;
+
+}
+
+.darkmood{
+  background: black;
+  --color-bg:black;
+  --color-card:#111111;
+  --text-card:white;
+}
+body{
+    overflow-x: hidden;
+}
+
+@media (max-width:1024px){
+    main{
+        grid-template-columns: 8% 56% 32%;
+    }
+}
+@media (max-width:768px){
+    main{
+        grid-template-columns: 100%;
+    }
+    .container{
+        width: 94%;
+    }
+}
